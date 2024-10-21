@@ -1,7 +1,3 @@
-group:
-  - m_mmlu_pro
-task:
-  - m_mmlu_pro_biology
 dataset_path: efederici/MMLU-Pro-ita
 test_split: test
 fewshot_split: validation
