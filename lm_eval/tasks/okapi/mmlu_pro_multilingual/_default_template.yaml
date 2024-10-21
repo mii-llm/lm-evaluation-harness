@@ -1,5 +1,20 @@
 group:
   - m_mmlu_pro
+task:
+  - m_mmlu_pro_biology
+  - m_mmlu_pro_business
+  - m_mmlu_pro_chemistry
+  - m_mmlu_pro_computer_science
+  - m_mmlu_pro_economics
+  - m_mmlu_pro_engineering
+  - m_mmlu_pro_health
+  - m_mmlu_pro_history
+  - m_mmlu_pro_law
+  - m_mmlu_pro_math
+  - m_mmlu_pro_other
+  - m_mmlu_pro_philosophy
+  - m_mmlu_pro_physics
+  - m_mmlu_pro_psychology
 dataset_path: efederici/MMLU-Pro-ita
 test_split: test
 fewshot_split: validation
