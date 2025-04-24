@@ -2,8 +2,8 @@ def doc_to_text(x):
     question = x["question"].strip()
     choices = x["options"]
     inp = f"{question}"
-    for _key in ["A", "B", "C", "D", "E", "F"]:
-        inp = inp + f"\\n{_key}. {choices[_key]}"
+    for idx, choice in enumerate(choices):
+        inp = inp + f"\\n{choice['value']}. {choice['text']}"
     return inp + "\\nRisposta:"
 
 
