@@ -5,7 +5,7 @@ test_split: train
 #  sampler: first_n
 output_type: multiple_choice
 doc_to_text: !function utils.doc_to_text
-doc_to_choice: !function ["A", "B", "C", "D", "E", "F"]
+doc_to_choice: ["A", "B", "C", "D", "E", "F"]
 doc_to_target: correct_answer
 metric_list:
   - metric: acc
