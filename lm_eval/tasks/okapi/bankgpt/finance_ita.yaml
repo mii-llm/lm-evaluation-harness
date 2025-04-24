@@ -1,2 +1,2 @@
 include: _default_template.yaml
-task: finance_ita
+task: bankgpt
