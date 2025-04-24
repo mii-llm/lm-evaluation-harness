@@ -1,12 +1,12 @@
-dataset_path: mii-llm/finance_ita
+dataset_path: FairMind/bankgpt_eval
 test_split: train
 #fewshot_split: validation
 #fewshot_config:
 #  sampler: first_n
 output_type: multiple_choice
 doc_to_text: !function utils.doc_to_text
-doc_to_choice: !function utils.doc_to_choice  #["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
-doc_to_target: answer
+doc_to_choice: !function ["A", "B", "C", "D", "E", "F"]
+doc_to_target: correct_answer
 metric_list:
   - metric: acc
     aggregation: mean
